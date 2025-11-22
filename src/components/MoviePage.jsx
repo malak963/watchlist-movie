@@ -7,7 +7,7 @@ const MoviePage = () => {
   const [videoKey, setVideoKey] = useState(null);
 
   useEffect(() => {
-    const apiKey = '2bf24dea2b4c3953f2394ad560fd6657';
+    const apiKey = 'put your key here.';
     const fetchMovie = async () => {
       const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=ar`);
       const data = await res.json();
